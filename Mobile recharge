@@ -1,0 +1,42 @@
+import java.util.*;
+class mobile
+{
+    public static void main()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter 1 for Talktime credit,2 for Internet credit,3 for Balance info,4 for chota talktime credit,5 for chota internet credit,6 for data loan");
+        int ch=sc.nextInt();
+        double b1=0.0,b2=0.0,d1=0.0,d2=0.0;
+        switch (ch)
+        {
+            case 1:
+            System.out.println("Enter amount");
+            d1=sc.nextDouble();
+            b1 =b1 +d1;
+            break;
+            case 2:
+            System.out.println("Enter amount");
+            d2=sc.nextDouble();
+            b2=b2+d2;
+            break;
+            case 3:
+            System.out.println(b1+" "+b2);
+            break;
+            case 4:
+            System.out.println("Enter amount between 1 to 50");
+            d1=sc.nextInt();
+            b1=b1+d1;
+            break;
+            case 5:
+            System.out.println("Enter amount between 1 to 50");
+            d2=sc.nextInt();
+            b2=b2+d2;
+            break;
+            case 6:
+            b1=b1+25;
+            b2=b2+25;
+            break;
+        }
+    }
+}
+        
